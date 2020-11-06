@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/HCI_project_V1/Demos/Scenes/HelloVR.unity
+- path: Assets/Testing_V1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
