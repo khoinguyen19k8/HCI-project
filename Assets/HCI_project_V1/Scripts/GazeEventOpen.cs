@@ -16,6 +16,8 @@ public class GazeEventOpen : MonoBehaviour
     public Material gazedAtMaterial;
 
     private Renderer myRenderer;
+    //public GameObject canvasManager;
+    //private GameObject canvas;
 
     public void SetGazedAt(bool gazedAt)
     {
@@ -28,6 +30,8 @@ public class GazeEventOpen : MonoBehaviour
     }
     void Start()
     {
+        //canvasTransform = canvasManager.GetComponent<Transform>();
+        //canvas = canvasManager.transform.Find("MessageCanvas").gameObject;
         myRenderer = GetComponent<Renderer>();
         SetGazedAt(false);
     }
@@ -39,6 +43,7 @@ public class GazeEventOpen : MonoBehaviour
             if (timeDuration > totalTime)
             {
                 timeDuration = 0;
+                //canvas.SetActive(true);
                 openObject.SetActive(true);
             }
         }
