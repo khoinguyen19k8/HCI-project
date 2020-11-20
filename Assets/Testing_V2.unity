@@ -533,6 +533,71 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 390902453}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &190340642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7670664113918690667, guid: 3037d4982ff99924eab83079bbf56931,
+    type: 3}
+  m_PrefabInstance: {fileID: 226371476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &190340643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190340642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ec77824ea1a474f933d3e736065194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTime: 3
+  Menu: {fileID: 0}
+  inactiveMaterial: {fileID: 2100000, guid: 5f3ad2d4a41ccc74e814fcb600da8bf3, type: 2}
+  gazedAtMaterial: {fileID: 2100000, guid: e1e60605ecc8e08498ed2102ca8bb356, type: 2}
+--- !u!114 &190340644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190340642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 190340643}
+          m_MethodName: SetGazedAt
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 190340643}
+          m_MethodName: SetGazedAt
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &226371476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -548,7 +613,7 @@ PrefabInstance:
     - target: {fileID: 952845427719563786, guid: 3037d4982ff99924eab83079bbf56931,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 952845427719563790, guid: 3037d4982ff99924eab83079bbf56931,
         type: 3}
@@ -605,6 +670,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1541082873514516248, guid: 3037d4982ff99924eab83079bbf56931,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 861114476}
+    - target: {fileID: 1541082873514516248, guid: 3037d4982ff99924eab83079bbf56931,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetGazedAt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541082873514516248, guid: 3037d4982ff99924eab83079bbf56931,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 861114476}
+    - target: {fileID: 1541082873514516248, guid: 3037d4982ff99924eab83079bbf56931,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetGazedAt
+      objectReference: {fileID: 0}
     - target: {fileID: 7940442148380494743, guid: 3037d4982ff99924eab83079bbf56931,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -627,6 +712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1238916796956361846, guid: 3037d4982ff99924eab83079bbf56931, type: 3}
+    - {fileID: 1541082873514516251, guid: 3037d4982ff99924eab83079bbf56931, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3037d4982ff99924eab83079bbf56931, type: 3}
 --- !u!1 &226371477 stripped
 GameObject:
@@ -634,6 +720,71 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 226371476}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &226371478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7415540610872793371, guid: 3037d4982ff99924eab83079bbf56931,
+    type: 3}
+  m_PrefabInstance: {fileID: 226371476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &226371479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226371478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 226371480}
+          m_MethodName: SetGazedAt
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 226371480}
+          m_MethodName: SetGazedAt
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &226371480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226371478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2730554215ee3124f9eb3d4ac1dce2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTime: 3
+  Menu: {fileID: 0}
+  inactiveMaterial: {fileID: 2100000, guid: 5f3ad2d4a41ccc74e814fcb600da8bf3, type: 2}
+  gazedAtMaterial: {fileID: 2100000, guid: e1e60605ecc8e08498ed2102ca8bb356, type: 2}
 --- !u!1 &389255504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,6 +1256,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalTime: 3
   openObject: {fileID: 226371477}
+  inactiveMaterial: {fileID: -6478536213147159724, guid: 5128a457f83bde945bd6cbc59b4c50ea,
+    type: 3}
+  gazedAtMaterial: {fileID: 2100000, guid: 2ad4442a57bc9214f8c5fbb01d6a0ac7, type: 2}
 --- !u!114 &701368072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1448,6 +1602,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 848404732}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &861114474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 952845428742393367, guid: 3037d4982ff99924eab83079bbf56931,
+    type: 3}
+  m_PrefabInstance: {fileID: 226371476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &861114476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861114474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bfd43c7225a7b408d670fe2351c4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTime: 3
+  Menu: {fileID: 0}
+  inactiveMaterial: {fileID: 2100000, guid: 5f3ad2d4a41ccc74e814fcb600da8bf3, type: 2}
+  gazedAtMaterial: {fileID: 2100000, guid: e1e60605ecc8e08498ed2102ca8bb356, type: 2}
 --- !u!1001 &873428114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2104,6 +2280,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalTime: 3
   openObject: {fileID: 1600979172}
+  inactiveMaterial: {fileID: 4874126678125670354, guid: 5128a457f83bde945bd6cbc59b4c50ea,
+    type: 3}
+  gazedAtMaterial: {fileID: 2100000, guid: 2ad4442a57bc9214f8c5fbb01d6a0ac7, type: 2}
 --- !u!114 &1086852360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2308,7 +2487,7 @@ PrefabInstance:
     - target: {fileID: 1962534682265773868, guid: db4afc71610aef443b3771212257dbc7,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8662501445461067441, guid: db4afc71610aef443b3771212257dbc7,
         type: 3}
@@ -2881,6 +3060,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalTime: 3
+  inactiveMaterial: {fileID: -6922793697723135513, guid: 5128a457f83bde945bd6cbc59b4c50ea,
+    type: 3}
+  gazedAtMaterial: {fileID: 2100000, guid: 2ad4442a57bc9214f8c5fbb01d6a0ac7, type: 2}
 --- !u!64 &1764510880
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2928,6 +3110,71 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1764510879}
+          m_MethodName: SetGazedAt
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &2002764353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7670664113641044496, guid: 3037d4982ff99924eab83079bbf56931,
+    type: 3}
+  m_PrefabInstance: {fileID: 226371476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2002764354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002764353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87670e52733fde34ca5c46c6747fafdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTime: 3
+  Menu: {fileID: 0}
+  inactiveMaterial: {fileID: 2100000, guid: 5f3ad2d4a41ccc74e814fcb600da8bf3, type: 2}
+  gazedAtMaterial: {fileID: 2100000, guid: e1e60605ecc8e08498ed2102ca8bb356, type: 2}
+--- !u!114 &2002764355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002764353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2002764354}
+          m_MethodName: SetGazedAt
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2002764354}
           m_MethodName: SetGazedAt
           m_Mode: 6
           m_Arguments:

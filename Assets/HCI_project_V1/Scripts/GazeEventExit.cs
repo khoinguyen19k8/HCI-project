@@ -11,14 +11,23 @@ public class GazeEventExit : MonoBehaviour
     private bool isLookedAt = false;
     private float timeDuration = 0f;
 
+    public Material inactiveMaterial;
+    public Material gazedAtMaterial;
+
+    private Renderer myRenderer;
+
     public void SetGazedAt(bool gazedAt)
     {
-        print(gazedAt);
         isLookedAt = gazedAt;
-        return;
+        if (inactiveMaterial != null && gazedAtMaterial != null)
+        {
+            myRenderer.material = gazedAt ? gazedAtMaterial : inactiveMaterial;
+            return;
+        }
     }
     void Start()
     {
+        myRenderer = GetComponent<Renderer>();
         SetGazedAt(false);
     }
     void Update()
