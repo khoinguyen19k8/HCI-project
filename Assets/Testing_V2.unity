@@ -188,6 +188,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.29943
       objectReference: {fileID: 0}
+    - target: {fileID: 2300020, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c52d9570c493ce2419f40c2e4b8e1126, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
 --- !u!4 &1026003 stripped
@@ -954,6 +958,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.29943
       objectReference: {fileID: 0}
+    - target: {fileID: 2300020, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9c5bc3f165beb154ab9eba2c01a13f8c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
 --- !u!4 &206004876 stripped
@@ -1108,6 +1116,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.29943
       objectReference: {fileID: 0}
+    - target: {fileID: 2300020, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 313311245e76a8b4ca867fdabbc6d0b1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
 --- !u!4 &217771257 stripped
@@ -1178,7 +1190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasText: {fileID: 860592617}
-  balls1: []
+  balls1:
+  - {fileID: 861306208}
+  - {fileID: 1026004}
   audioGood: {fileID: 73254257}
   audioBad: {fileID: 1492478427}
   totalTime: 3
@@ -2268,9 +2282,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Search for 2.
-
-    Select middle element.'
+  m_Text: Normally it would take at max n steps to find an element. Here I will show
+    you a faster way. Let's find the number 2. Select the middle element.
 --- !u!222 &860592618
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2368,6 +2381,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.29943
       objectReference: {fileID: 0}
+    - target: {fileID: 2300020, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c2b0f14f049f2d4789c965f4105b001, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
 --- !u!4 &861306207 stripped
@@ -2438,7 +2455,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasText: {fileID: 860592617}
-  balls1: []
+  balls1:
+  - {fileID: 1982705233}
+  - {fileID: 1312755518}
+  - {fileID: 206004877}
+  - {fileID: 1291103119}
+  - {fileID: 1651072055}
   audioGood: {fileID: 73254257}
   audioBad: {fileID: 1492478427}
   totalTime: 3
@@ -2572,6 +2594,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.29943
       objectReference: {fileID: 0}
+    - target: {fileID: 2300020, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 313311245e76a8b4ca867fdabbc6d0b1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
 --- !u!4 &896891364 stripped
@@ -3734,6 +3760,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.29943
       objectReference: {fileID: 0}
+    - target: {fileID: 2300020, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1c5fdd33150a01a4b8175eb701bddd5f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
 --- !u!4 &1291103118 stripped
@@ -4044,6 +4074,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.29943
       objectReference: {fileID: 0}
+    - target: {fileID: 2300020, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 583185514a285694984f39f390d3a737, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
 --- !u!4 &1312755517 stripped
@@ -4295,7 +4329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1473869643}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: binary_search
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4875,6 +4909,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.29943
       objectReference: {fileID: 0}
+    - target: {fileID: 2300020, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e54aac3307b01d74f83f6ed026f1b2c6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
 --- !u!4 &1651072054 stripped
@@ -5114,6 +5152,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.29943
       objectReference: {fileID: 0}
+    - target: {fileID: 2300020, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cec43d446ac383644beae36953ddad1b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9d89f1aab57e5e4791992c5f6f547b8, type: 3}
 --- !u!4 &1982705232 stripped
