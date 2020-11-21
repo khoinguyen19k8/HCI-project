@@ -56,7 +56,7 @@ public class BinarySearch : MonoBehaviour {
 					case 2:
 						if (gameObject.name == "ball2")
 						{
-							canvasText.text = "Awesome.\n You found the ball2.\n That wraps up your binary search\nSelect any balloon to return to main screen.";
+							canvasText.text = "Awesome.\n You found the ball2.\n That wraps up your binary search\nSelect the button on the head of Eliza to return to main menu, or the reset button to play again.";
 							if (anim != null)
 							{
 								anim.enabled = true;
@@ -78,7 +78,7 @@ public class BinarySearch : MonoBehaviour {
 				{
 					audioGood.Play();
 					foreach (GameObject g in balls1)
-						Destroy(g);
+						g.SetActive(false);
 				}
 			}
 		}

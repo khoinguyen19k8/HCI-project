@@ -1,9 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BinarySearch
     - GazeEventClose
     - GazeEventExit
     - GazeEventOpen
+    - GazeEventReset
     - GoogleVR.Demos.DemoInputManager
     - GoogleVR.Demos.DemoSceneManager
     - GoogleVR.HelloVR.HeadsetDemoManager
@@ -24,6 +26,13 @@ ScriptsOnlyBuild:
     - GvrReticlePointer
     - GvrTrackedController
     - InstantPreviewHelper
+    - Level1
+    - Level2
+    - Level3
+    - Level4
+    - ReturnToMenu
+    - TurnVolumeOff
+    - TurnVolumeOn
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -87,55 +96,69 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 11720}
+      Script: {instanceID: 11654}
     - Class: 114
-      Script: {instanceID: 11764}
+      Script: {instanceID: 11664}
     - Class: 114
-      Script: {instanceID: 11772}
+      Script: {instanceID: 11698}
     - Class: 114
-      Script: {instanceID: 11790}
+      Script: {instanceID: 11726}
     - Class: 114
-      Script: {instanceID: 11882}
+      Script: {instanceID: 11770}
     - Class: 114
-      Script: {instanceID: 12428}
+      Script: {instanceID: 11778}
     - Class: 114
-      Script: {instanceID: 12456}
+      Script: {instanceID: 11796}
     - Class: 114
-      Script: {instanceID: 12628}
+      Script: {instanceID: 11888}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 11932}
     - Class: 114
-      Script: {instanceID: 12778}
+      Script: {instanceID: 12026}
     - Class: 114
-      Script: {instanceID: 12874}
+      Script: {instanceID: 12228}
     - Class: 114
-      Script: {instanceID: 12878}
+      Script: {instanceID: 12442}
     - Class: 114
-      Script: {instanceID: 12950}
+      Script: {instanceID: 12470}
     - Class: 114
-      Script: {instanceID: 13006}
+      Script: {instanceID: 12644}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 12740}
     - Class: 114
-      Script: {instanceID: 13084}
+      Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 13086}
+      Script: {instanceID: 12890}
     - Class: 114
-      Script: {instanceID: 13100}
+      Script: {instanceID: 12894}
     - Class: 114
-      Script: {instanceID: 13388}
+      Script: {instanceID: 12966}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13472}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 13484}
+      Script: {instanceID: 13068}
     - Class: 114
-      Script: {instanceID: 13496}
+      Script: {instanceID: 13102}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 13104}
     - Class: 114
-      Script: {instanceID: 14250}
+      Script: {instanceID: 13118}
+    - Class: 114
+      Script: {instanceID: 13140}
+    - Class: 114
+      Script: {instanceID: 13408}
+    - Class: 114
+      Script: {instanceID: 13462}
+    - Class: 114
+      Script: {instanceID: 13482}
+    - Class: 114
+      Script: {instanceID: 13494}
+    - Class: 114
+      Script: {instanceID: 13506}
+    - Class: 114
+      Script: {instanceID: 13518}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -305,10 +328,28 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 3ae77ad31d714d65e22ef34b44c7055e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Level2
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 3ae77ad31d714d65e22ef34b44c7055e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Level3
+  - hash:
+      serializedVersion: 2
+      Hash: 3ae77ad31d714d65e22ef34b44c7055e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Level4
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -341,7 +382,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 7205c92e6dcfe641d0d4157530b808b3
+      Hash: 213fd3e383aba6d7923024a2ddf66395
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GazeEventExit
@@ -407,6 +448,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 6bb609f786a6e7908d9ff29cc42fff60
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BinarySearch
+  - hash:
+      serializedVersion: 2
       Hash: ed916f285d5522ec5ceb6eccef8d0072
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleVR.VideoDemo
@@ -431,6 +478,18 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 3874fb20654a3b185e93235cee8faba8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GazeEventReset
+  - hash:
+      serializedVersion: 2
+      Hash: 4f4ca43eb8a040c83d4575a7a0cc2739
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Rotation
+  - hash:
+      serializedVersion: 2
       Hash: 0fb27be807aa299702f28ad0bcad1f46
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -453,6 +512,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: f935d3a7d44f342b6dde568010010009
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReturnToMenu
   - hash:
       serializedVersion: 2
       Hash: bf3913f0d6c694bf20e1d681c79a4993
@@ -507,6 +572,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GvrLaserPointer
+  - hash:
+      serializedVersion: 2
+      Hash: a086e6f72394dc87eeb33ca642275e3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelectionSort
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -653,6 +724,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: f935d3a7d44f342b6dde568010010009
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Level1
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -681,6 +758,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GvrControllerVisual
+  - hash:
+      serializedVersion: 2
+      Hash: 5073c179db7f21027e887d9637b7eb40
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TurnVolumeOff
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -779,7 +862,7 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: 3acce80174e9f43aae68733468628520
+      Hash: 72fc27a7853991e576de765236d49233
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GazeEventOpen
@@ -801,6 +884,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Gvr.Internal
     className: EmulatorClientSocket
+  - hash:
+      serializedVersion: 2
+      Hash: 5073c179db7f21027e887d9637b7eb40
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TurnVolumeOn
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -843,6 +932,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GvrXREventsSubscriber
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Fruit
   - hash:
       serializedVersion: 2
       Hash: 719e5a8f63dda20dad1ba86875c22268

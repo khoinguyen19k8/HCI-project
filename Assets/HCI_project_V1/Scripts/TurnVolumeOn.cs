@@ -9,7 +9,8 @@ public class TurnVolumeOn : MonoBehaviour
     public float totalTime = 3f;
     private bool isLookedAt;
     private float timeDuration = 0f;
-    public GameObject audioSource;
+    public GameObject[] audioSources;
+    public Text notification;
 
     public void SetGazedAt(bool gazedAt)
     {
@@ -32,9 +33,8 @@ public class TurnVolumeOn : MonoBehaviour
             if (timeDuration > totalTime)
             {
                 timeDuration = 0;
-                //AudioSource audioComp = audioSource.GetComponent<AudioSource>();
-                //audioComp.volume = 1;
-                audioSource.GetComponent<AudioSource>().volume = 1;
+                foreach (GameObject g in audioSources)
+                    g.GetComponent<AudioSource>().volume = 1;
             }
         }
         else
