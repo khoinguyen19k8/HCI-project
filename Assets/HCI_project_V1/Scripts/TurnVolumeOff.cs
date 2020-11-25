@@ -35,6 +35,8 @@ public class TurnVolumeOff : MonoBehaviour
                 timeDuration = 0;
                 foreach(GameObject g in audioSources)
                     g.GetComponent<AudioSource>().volume = 0;
+                StartCoroutine(PrintText("Music turned off", 0f));
+                StartCoroutine(PrintText("Please refer to Eliza for assisstance", 5f));
             }
         }
         else
@@ -42,5 +44,10 @@ public class TurnVolumeOff : MonoBehaviour
             timeDuration = 0;
         }
 
+    }
+    IEnumerator PrintText(string s, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        notification.text = s;
     }
 }

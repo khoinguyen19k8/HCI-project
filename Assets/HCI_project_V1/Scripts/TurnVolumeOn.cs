@@ -12,15 +12,6 @@ public class TurnVolumeOn : MonoBehaviour
     public GameObject[] audioSources;
     public Text notification;
 
-    public void SetGazedAt(bool gazedAt)
-    {
-        isLookedAt = gazedAt;
-        return;
-    }
-    void OnEnable()
-    {
-        SetGazedAt(false);
-    }
     void Start()
     {
         SetGazedAt(false);
@@ -35,6 +26,8 @@ public class TurnVolumeOn : MonoBehaviour
                 timeDuration = 0;
                 foreach (GameObject g in audioSources)
                     g.GetComponent<AudioSource>().volume = 1;
+                StartCoroutine(PrintText("Music turned on", 0f));
+                StartCoroutine(PrintText("Please refer to Eliza for assisstance", 5f));
             }
         }
         else
@@ -42,5 +35,19 @@ public class TurnVolumeOn : MonoBehaviour
             timeDuration = 0;
         }
 
+    }
+    public void SetGazedAt(bool gazedAt)
+    {
+        isLookedAt = gazedAt;
+        return;
+    }
+    void OnEnable()
+    {
+        SetGazedAt(false);
+    }
+    IEnumerator PrintText(string s, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        notification.text = s;
     }
 }

@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Testing_V4.unity
+    guid: 09270aa291c1371439a96956f6e6a889
+  - enabled: 1
+    path: Assets/Binary_search.unity
+    guid: 0094a2519c7f5f449b721da6b58f414c
+  - enabled: 1
+    path: Assets/Selection_sort.unity
+    guid: a553c61dfd817394aa36253a83c185f3
+  - enabled: 1
+    path: Assets/Fruits.unity
+    guid: 9b474f270ffdf8d409aaf0f20bd5b9c2
   m_configObjects: {}

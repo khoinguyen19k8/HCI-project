@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Testing_V2.unity
+- path: Assets/Selection_sort.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

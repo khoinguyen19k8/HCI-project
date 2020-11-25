@@ -67,6 +67,10 @@ public class BinarySearch : MonoBehaviour {
 				}
 				if (gameObject.tag == "Respawn")
 				{
+					SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+				}
+				if (gameObject.tag == "DefaultScene")
+				{
 					SceneManager.LoadScene(0, LoadSceneMode.Single);
 				}
 

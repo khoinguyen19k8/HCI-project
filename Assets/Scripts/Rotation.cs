@@ -18,7 +18,39 @@ public class Rotation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate (0, 5 * Time.deltaTime * Speed, 0);	
+		transform.Rotate (0, 5 * Time.deltaTime * Speed, 0);
+		if (Input.GetButtonDown("Fire2") == true) //apple
+		{
+			if (c == 0)
+			{
+				commandText.text = "a = \"apple\" < \"banana\";\nfruit = a ? \"strawberry\" : \"apple\";\nWhat is the value of fruit?";
+				audioGood.Play();
+				++c;
+			}
+			else
+				audioBad.Play();
+		}
+		else if (Input.GetButtonDown("Fire3") == true) //strawberry
+		{
+			if (c == 1)
+			{
+				commandText.text = "a = (5 > 1) && (10 > 2) && (2 > 3);\n if(a == true) {print(\"apple\") else {print(\"banana\")}}";
+				audioGood.Play();
+				++c;
+			}
+			else
+				audioBad.Play();
+		}
+		else if (Input.GetButtonDown("Jump") == true) //banana
+		{
+			if (c == 2)
+			{
+				commandText.text = "Congratulation, and always remember an apple a day keeps the doctor away. You can now exit or reset the level";
+				audioGood.Play();
+			}
+			else
+				audioBad.Play();
+		}
 	}
 
 	public void stopRotation(){
@@ -29,7 +61,7 @@ public class Rotation : MonoBehaviour {
 		Speed = 10;
 	}
 
-	public void selected(){
+	/*public void selected(){
 		if (gameObject.name == "Apple") {
 			audioGood.Play ();
 			Destroy (gameObject);
@@ -41,5 +73,5 @@ public class Rotation : MonoBehaviour {
 		} else {
 			audioBad.Play ();
 		}
-	}
+	}*/
 }

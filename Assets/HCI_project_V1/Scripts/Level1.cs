@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 
 public class Level1 : MonoBehaviour
@@ -15,6 +16,9 @@ public class Level1 : MonoBehaviour
     
     public Material inactiveMaterial;
     public Material gazedAtMaterial;
+
+    public GameObject player;
+    private Transform playerPosition;
 
     private Image buttonImage;
 
@@ -35,6 +39,7 @@ public class Level1 : MonoBehaviour
     }
     void Start()
     {
+        playerPosition = player.GetComponent<Transform>();
         SetGazedAt(false);
     }
     void Update()
@@ -49,6 +54,8 @@ public class Level1 : MonoBehaviour
                     g.SetActive(false);
                 foreach (GameObject g in openObjects)
                     g.SetActive(true);
+                playerPosition.position = new Vector3(12f, 1.5f, 0);
+
             }
         }
         else
